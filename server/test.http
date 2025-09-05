@@ -21,11 +21,11 @@ Content-Type: application/json
 
 ### FETCH QUESTIONS
 GET http://localhost:5000/api/exam/questions
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4YmE4OTBhZmIxNjIzYTU2ZGU4ZWVmOCIsImlhdCI6MTc1NzA4ODU1OSwiZXhwIjoxNzU3MDkyMTU5fQ.5XJ7Dv7MHftu2NV4wjxpjmPbnUaZ5KgkvTgS92m2glU
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4YmE4OTBhZmIxNjIzYTU2ZGU4ZWVmOCIsImlhdCI6MTc1NzA5MjUzOCwiZXhwIjoxNzU3MDk2MTM4fQ.dNUocNAWeUM_PqSWlFnD-mH_KP8I1teiI9bzyPDl7po
 
 ### SUBMIT EXAM
 POST http://localhost:5000/api/exam/submit
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4YmE4OTBhZmIxNjIzYTU2ZGU4ZWVmOCIsImlhdCI6MTc1NzA4ODU1OSwiZXhwIjoxNzU3MDkyMTU5fQ.5XJ7Dv7MHftu2NV4wjxpjmPbnUaZ5KgkvTgS92m2glU
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4YmE4OTBhZmIxNjIzYTU2ZGU4ZWVmOCIsImlhdCI6MTc1NzA5MjUzOCwiZXhwIjoxNzU3MDk2MTM4fQ.dNUocNAWeUM_PqSWlFnD-mH_KP8I1teiI9bzyPDl7po
 Content-Type: application/json
 
 {
@@ -40,5 +40,5 @@ Content-Type: application/json
 
 
 ### FETCH RESULT
-GET http://localhost:5000/api/exam/result/68bb0b644ec2dffa719875a7
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4YmE4OTBhZmIxNjIzYTU2ZGU4ZWVmOCIsImlhdCI6MTc1NzA4ODU1OSwiZXhwIjoxNzU3MDkyMTU5fQ.5XJ7Dv7MHftu2NV4wjxpjmPbnUaZ5KgkvTgS92m2glU
+GET http://localhost:5000/api/exam/result/68bb1ad6887b80f9b86b6a7d
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4YmE4OTBhZmIxNjIzYTU2ZGU4ZWVmOCIsImlhdCI6MTc1NzA5MjUzOCwiZXhwIjoxNzU3MDk2MTM4fQ.dNUocNAWeUM_PqSWlFnD-mH_KP8I1teiI9bzyPDl7po
