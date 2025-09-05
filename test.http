@@ -1,0 +1,44 @@
+POST http://localhost:5000/api/auth/register
+Content-Type: application/json
+
+{
+  "name": "john123",
+  "email": "john@example.com",
+  "password": "mypassword"
+}
+
+
+
+### LOGIN
+POST http://localhost:5000/api/auth/login
+Content-Type: application/json
+
+{
+  "email": "john@example.com",
+  "password": "mypassword"
+}
+
+
+### FETCH QUESTIONS
+GET http://localhost:5000/api/exam/questions
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4YmE4OTBhZmIxNjIzYTU2ZGU4ZWVmOCIsImlhdCI6MTc1NzA4ODU1OSwiZXhwIjoxNzU3MDkyMTU5fQ.5XJ7Dv7MHftu2NV4wjxpjmPbnUaZ5KgkvTgS92m2glU
+
+### SUBMIT EXAM
+POST http://localhost:5000/api/exam/submit
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4YmE4OTBhZmIxNjIzYTU2ZGU4ZWVmOCIsImlhdCI6MTc1NzA4ODU1OSwiZXhwIjoxNzU3MDkyMTU5fQ.5XJ7Dv7MHftu2NV4wjxpjmPbnUaZ5KgkvTgS92m2glU
+Content-Type: application/json
+
+{
+  "answers": [
+    { "questionId": "68baae065623e7579573518b", "selectedOption": 2 },  
+    { "questionId": "68baae065623e7579573518a", "selectedOption": 1 },  
+    { "questionId": "68baae065623e75795735189", "selectedOption": 3 }  
+  ]
+}
+
+
+
+
+### FETCH RESULT
+GET http://localhost:5000/api/exam/result/68bb0b644ec2dffa719875a7
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4YmE4OTBhZmIxNjIzYTU2ZGU4ZWVmOCIsImlhdCI6MTc1NzA4ODU1OSwiZXhwIjoxNzU3MDkyMTU5fQ.5XJ7Dv7MHftu2NV4wjxpjmPbnUaZ5KgkvTgS92m2glU
