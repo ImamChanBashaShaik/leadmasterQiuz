@@ -1,0 +1,47 @@
+{
+  "info": {
+    "name": "LeadMaster Quiz API",
+    "_postman_id": "12345-67890-abcdef",
+    "description": "Collection for testing LeadMaster Quiz backend APIs",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Get All Quizzes",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:5000/api/quizzes",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "5000",
+          "path": ["api", "quizzes"]
+        }
+      }
+    },
+    {
+      "name": "Submit Quiz Answers",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"quizId\": 1,\n  \"answers\": [\"A\", \"C\", \"B\"]\n}"
+        },
+        "url": {
+          "raw": "http://localhost:5000/api/submit",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "5000",
+          "path": ["api", "submit"]
+        }
+      }
+    }
+  ]
+}
